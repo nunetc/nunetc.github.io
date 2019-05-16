@@ -1,11 +1,81 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta property="og:image" content="https://nunetc.github.io/pig.jpg">
-  <meta property="og:title" content="ทดสอบ Title">
-  <meta property="og:description" content="ทดสอบ Description">
-  <meta property="og:url" content="https://nunetc.github.io/index.html">
+  <meta charset="utf-8">
+  <title>Furnish Part - บริษัท เฟอร์นิช พาร์ท จำกัด</title>
+  <meta name="description" content="Furnish Part - บริษัท เฟอร์นิช พาร์ท จำกัด">
+  <meta name="author" content="Furnish Parts">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="vendor/perfundo/perfundo.with-icons.min.css">
 </head>
 <body>
-  Hello Nunetc
+  <div class="wrapper">
+    <div class="home header"></div>
+    
+    <div class="home content" style="padding-top: -70px;">
+      <div class="menu" style="margin-top: -1px;">
+        <div class="home"><a href="">หน้าแรก</a></div>
+        <div class="about-us"><a href="about-us.html">เกี่ยวกับเรา</a></div>
+        <div class="design3d"><a href="">ผลงานด้านออกแบบ 3D</a></div>
+        <div class="gallery"><a href="">ผลงานตัวอย่าง</a></div>
+        <div class="contact-us"><a href="">ติดต่อเรา</a></div>
+      </div>
+      
+      <div class="perfundo js-perfundo photo">
+        <a class="perfundo__link js-perfundo-link" href="#perfundo-img1">
+          <img src="asset/home/sh1.jpg">
+        </a>
+        <div id="perfundo-img1" class="perfundo__overlay fadeIn js-perfundo-overlay">
+          <figure class="perfundo__content perfundo__figure">
+            <img src="asset/home/sh1.jpg">
+            <div class="perfundo__image" style="width: 800px; padding-top: 66.25%; background-image: url(asset/home/h1.jpg);"></div>
+          </figure>
+          <a href="#perfundo-untarget" class="perfundo__close perfundo__control js-perfundo-close">Close</a>
+          <a class="perfundo__next perfundo__control js-perfundo-next" href="#perfundo-img2">Next</a>
+        </div>
+      </div>
+      
+      <div class="perfundo js-perfundo photo">
+        <a class="perfundo__link js-perfundo-link" href="#perfundo-img2">
+          <img src="asset/home/sh2.jpg">
+        </a>
+        <div id="perfundo-img2" class="perfundo__overlay fadeIn js-perfundo-overlay">
+          <figure class="perfundo__content perfundo__figure">
+            <img src="asset/home/sh2.jpg">
+            <div class="perfundo__image" style="width: 800px; padding-top: 66.25%; background-image: url(asset/home/h2.jpg);"></div>
+          </figure>
+          <a href="#perfundo-untarget" class="perfundo__close perfundo__control js-perfundo-close">Close</a>
+          <a class="perfundo__next perfundo__control js-perfundo-next" href="#perfundo-img3">Next</a>
+          <a class="perfundo__prev perfundo__control js-perfundo-prev" href="#perfundo-img1">Prev</a>
+        </div>
+      </div>
+      
+      <div class="perfundo js-perfundo photo">
+        <a class="perfundo__link js-perfundo-link" href="#perfundo-img3">
+          <img src="asset/home/sh3.jpg">
+        </a>
+        <div id="perfundo-img3" class="perfundo__overlay fadeIn js-perfundo-overlay">
+          <figure class="perfundo__content perfundo__figure">
+            <img src="asset/home/sh3.jpg">
+            <div class="perfundo__image" style="width: 800px; padding-top: 66.25%; background-image: url(asset/home/h3.jpg);"></div>
+          </figure>
+          <a href="#perfundo-untarget" class="perfundo__close perfundo__control js-perfundo-close">Close</a>
+          <a class="perfundo__prev perfundo__control js-perfundo-prev" href="#perfundo-img2">Prev</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home footer"></div>
+  </div>
+
+  <script src="vendor/perfundo/perfundo.min.js"></script>
+  <script>
+    perfundo('.perfundo', {
+      disableHistory: true,
+      swipe: true
+    });
+  </script>
 </body>
 </html>
