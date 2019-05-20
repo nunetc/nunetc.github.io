@@ -16,24 +16,26 @@ body {
   position: relative;
 }
 
-.wrapper:before {
-  box-shadow: -15px 0 15px -15px inset;
-  content: " ";
-  height: 100%;
-  left: -15px;
-  position: absolute;
-  top: 0;
-  width: 15px;
-}
-
-.wrapper:after {
-  box-shadow: 15px 0 15px -15px inset;
-  content: " ";
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: -15px;
-  width: 15px;
+@media (min-width: 1150px) {
+  .wrapper:before {
+    box-shadow: -15px 0 15px -15px inset;
+    content: " ";
+    height: 100%;
+    left: -15px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+  }
+  
+  .wrapper:after {
+    box-shadow: 15px 0 15px -15px inset;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 15px;
+  }
 }
 
 /*
@@ -110,7 +112,7 @@ body {
 }
 
 /*
- * Home
+ * About us
  */
 .about-us.header {
   height: 119px;
@@ -120,4 +122,59 @@ body {
 .about-us.content {
   height: 1021px;
   background-image: url('../asset/about-us/content.jpg');
+}
+
+/*
+ * Design 3D
+ */
+ .design3d.header {
+  height: 119px;
+  background-image: url('../asset/main/header.jpg');
+}
+
+.design3d.content {
+  height: 1300px;
+}
+
+.design3d .section {
+  margin-top: 50px;
+  float: left;
+}
+
+.design3d .section .title {
+  padding: 4px 16px;
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+}
+
+.design3d .section .photo {
+  width: 380;
+  margin-top: 37px;
+  margin-left: 37px;
+  float: left;
+}
+
+.design3d.footer {
+  height: 45px;
+  background-image: url('../asset/design3d/footer.jpg');
+  background-repeat: no-repeat;
+}
+
+/*
+ * Contact us
+ */
+ .contact-us.header {
+  height: 119px;
+  background-image: url('../asset/main/header.jpg');
+}
+
+.contact-us.content {
+  height: 1200px;
+  background-image: url('../asset/contact-us/content.jpg');
+}
+
+.contact-us .menu {
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
